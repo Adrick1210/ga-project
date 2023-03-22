@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+    <title>GA Project</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to the ancient game of Lapis, Papyrus, Scalpellus!</h1>
+    </div>
+    <br />
+    <h1>ScoreBoard</h1>
+    <div class="scores">
+      <div class="playerScore">
+        <h2>Player:</h2>
+        <p id="p-count">0</p>
+      </div>
+      <div class="computerScore">
+        <h2>Computer:</h2>
+        <p id="c-count">0</p>
+      </div>
+    </div>
+    <div class="game">
+      <h2>Make your choice below!</h2>
+      <div class="choices">
+        <div class="lap">
+          <button id="lapis">Lapis</button>
+        </div>
+        <div class="papy">
+          <button id="papyrus">Papyrus</button>
+        </div>
+        <div class="scal">
+          <button id="scalpellus">Scalpellus</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="reset">
+      <input id="reset-but" type="button" value="Reset" onclick="reset()">
+    </div>
+    <br />
+    <div class="results">
+      <h1>The results are in...</h1>
+    </div>
+    
+    <script src="./game.js"></script>
+  </body>
+</html>

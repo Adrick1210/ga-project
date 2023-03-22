@@ -1,0 +1,47 @@
+.header {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.playerScore {
+  font-size: 1.5rem;
+}
+
+.computerScore {
+  font-size: 1.5rem;
+}
+
+#p-count {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#c-count {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.game {
+  text-align: center;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+p {
+  text-align: center;
+}
+
+.reset {
+    text-align: center;
+}
