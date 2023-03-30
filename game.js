@@ -89,19 +89,15 @@ buttons.forEach((button) => {
 });
 
 function outcomeHandler(string) {
-  let outcome = document.getElementById("result");
-  if (!outcome) {
-    outcome = document.createElement("p");
-    outcome.id = "result";
-    document.body.appendChild(outcome);
-  }
-  outcome.textContent = string;
+  let result = document.getElementById('result');
+  result.textContent = string;
 }
 
 const reset = () => {
   playerScore = 0;
   computerScore = 0;
+  result = '';
   document.querySelector("#p-count").innerHTML = playerScore;
   document.querySelector("#c-count").innerHTML = computerScore;
-  document.querySelector("#result").remove("p");
+  document.querySelector("#result").innerHTML = result;
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>GA Project</title>
   </head>
   <body>
@@ -12,22 +13,25 @@
       <h1>Welcome to the ancient game of Lapis, Papyrus, Scalpellus!</h1>
     </div>
     <br />
-    <h1>ScoreBoard</h1>
     <div class="scores">
       <div class="playerScore">
-        <h2>Player:</h2>
+        <h2>Player Score:</h2>
         <p id="p-count">0</p>
       </div>
       <div class="computerScore">
-        <h2>Computer:</h2>
+        <h2>Computer Score:</h2>
         <p id="c-count">0</p>
       </div>
     </div>
     <div class="game">
       <h2>Make your choice below!</h2>
+      <br>
+      <br>
       <div class="choices">
         <div class="lap">
-          <button id="lapis">Lapis</button>
+          <button type="button" id="lapis">
+            Lapis
+          </button>
         </div>
         <div class="papy">
           <button id="papyrus">Papyrus</button>
@@ -37,16 +41,18 @@
         </div>
       </div>
     </div>
-    <br>
-    <br>
-    <div class="reset">
-      <input id="reset-but" type="button" value="Reset" onclick="reset()">
-    </div>
+    <br />
+    <br />
+
     <br />
     <div class="results">
       <h1>The results are in...</h1>
+      <p id="result"></p>
     </div>
-    
+    <br />
+    <div class="reset">
+      <input id="reset-but" type="button" value="Reset" onclick="reset()" />
+    </div>
     <script src="./game.js"></script>
   </body>
 </html>
